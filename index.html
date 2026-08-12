@@ -6,7 +6,7 @@
 
 <meta name="description" content="خدمات پولی و اینترنتی برادران حبیبی">
 
-<title>خدمات پولی و اینترنتی برادران حبیبی</title>
+<title>خدمات پولی و اینترنتی | برادران حبیبی</title>
 
 <style>
 *{
@@ -15,71 +15,88 @@
   padding:0;
 }
 
+html{
+  scroll-behavior:smooth;
+}
+
 body{
   font-family:Tahoma,Arial,sans-serif;
   background:#06121f;
   color:#fff;
-  line-height:1.9;
+  line-height:1.8;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
 }
 
 header{
   position:sticky;
   top:0;
-  z-index:100;
-  background:rgba(6,18,31,.95);
-  border-bottom:1px solid #19334b;
+  z-index:1000;
+  background:rgba(6,18,31,.96);
+  border-bottom:1px solid #26384a;
   backdrop-filter:blur(10px);
 }
 
 nav{
   max-width:1100px;
   margin:auto;
-  padding:16px 20px;
+  min-height:72px;
+  padding:12px 20px;
   display:flex;
   align-items:center;
   justify-content:space-between;
-  gap:15px;
 }
 
 .logo{
-  font-size:20px;
-  font-weight:bold;
   color:#f5c542;
+  font-size:22px;
+  font-weight:bold;
 }
 
-nav a{
-  text-decoration:none;
+.nav-links{
+  display:flex;
+  gap:22px;
+  align-items:center;
+}
+
+.nav-links a{
   color:#fff;
-  margin-right:15px;
   font-size:14px;
+}
+
+.nav-links a:hover{
+  color:#f5c542;
 }
 
 .hero{
   max-width:1100px;
   margin:auto;
-  padding:80px 20px 60px;
+  padding:75px 20px 65px;
   text-align:center;
 }
 
 .badge{
   display:inline-block;
-  padding:6px 16px;
   border:1px solid #f5c542;
-  border-radius:30px;
   color:#f5c542;
+  border-radius:30px;
+  padding:7px 18px;
   margin-bottom:20px;
 }
 
 h1{
-  font-size:clamp(32px,7vw,65px);
+  font-size:clamp(34px,7vw,64px);
   line-height:1.35;
   margin-bottom:18px;
 }
 
 .hero p{
-  color:#b8c7d6;
-  max-width:700px;
+  max-width:720px;
   margin:0 auto 30px;
+  color:#b8c7d6;
   font-size:17px;
 }
 
@@ -92,26 +109,25 @@ h1{
 
 .btn{
   display:inline-block;
-  text-decoration:none;
-  padding:12px 25px;
-  border-radius:12px;
+  padding:13px 25px;
+  border-radius:14px;
   font-weight:bold;
   border:1px solid #f5c542;
   transition:.2s;
 }
 
-.btn-primary{
+.btn:hover{
+  transform:translateY(-2px);
+}
+
+.primary{
   background:#f5c542;
   color:#06121f;
 }
 
-.btn-secondary{
+.secondary{
+  background:#10283d;
   color:#fff;
-  background:#10263a;
-}
-
-.btn:hover{
-  transform:translateY(-2px);
 }
 
 section{
@@ -120,32 +136,30 @@ section{
   padding:55px 20px;
 }
 
-.title{
+.section-title{
   text-align:center;
+  font-size:34px;
+  margin-bottom:10px;
+}
+
+.section-text{
+  text-align:center;
+  color:#9fb0c1;
   margin-bottom:30px;
 }
 
-.title h2{
-  font-size:30px;
-  margin-bottom:8px;
-}
-
-.title p{
-  color:#9fb0c1;
-}
-
-.cards{
+.services{
   display:grid;
   grid-template-columns:repeat(3,1fr);
   gap:18px;
 }
 
 .card{
-  background:#0b1b2b;
-  border:1px solid #1b3852;
-  border-radius:18px;
+  background:linear-gradient(145deg,#0b1d2e,#10283d);
+  border:1px solid #263f55;
+  border-radius:20px;
   padding:25px;
-  transition:.2s;
+  transition:.25s;
 }
 
 .card:hover{
@@ -154,80 +168,103 @@ section{
 }
 
 .icon{
-  font-size:35px;
+  font-size:40px;
   margin-bottom:10px;
 }
 
 .card h3{
   color:#f5c542;
+  font-size:21px;
   margin-bottom:8px;
 }
 
 .card p{
-  color:#aebdcc;
-  font-size:14px;
+  color:#b8c7d6;
+  font-size:15px;
 }
 
-.contact{
-  background:linear-gradient(135deg,#0b1b2b,#102c43);
-  border:1px solid #21445f;
-  border-radius:22px;
-  padding:35px 25px;
+.contact-box{
+  background:linear-gradient(145deg,#0d2236,#102b42);
+  border:1px solid #f5c542;
+  border-radius:25px;
+  padding:35px 20px;
   text-align:center;
 }
 
-.contact h2{
-  margin-bottom:10px;
+.phone-list{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:25px;
 }
 
 .phone{
-  display:block;
-  color:#f5c542;
-  font-size:22px;
-  font-weight:bold;
-  text-decoration:none;
-  margin:8px;
-  direction:ltr;
+  background:#06121f;
+  border:1px solid #f5c542;
+  border-radius:14px;
+  padding:13px 20px;
+  color:#fff;
+}
+
+.phone:hover{
+  background:#f5c542;
+  color:#06121f;
 }
 
 footer{
+  border-top:1px solid #26384a;
   text-align:center;
   padding:30px 20px;
-  border-top:1px solid #19334b;
-  color:#8193a6;
-  font-size:13px;
+  color:#8fa2b5;
+  margin-top:30px;
 }
 
-@media(max-width:750px){
-  nav{
-    padding:13px 15px;
+.whatsapp{
+  position:fixed;
+  left:18px;
+  bottom:18px;
+  width:58px;
+  height:58px;
+  border-radius:50%;
+  background:#25d366;
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:27px;
+  box-shadow:0 5px 20px rgba(0,0,0,.35);
+  z-index:2000;
+}
+
+@media(max-width:800px){
+  .services{
+    grid-template-columns:1fr 1fr;
   }
 
-  nav a{
+  .nav-links{
     display:none;
   }
+}
 
+@media(max-width:550px){
   .hero{
-    padding:60px 18px 40px;
-  }
-
-  .cards{
-    grid-template-columns:1fr;
-  }
-
-  section{
-    padding:40px 18px;
+    padding-top:60px;
   }
 
   h1{
-    font-size:36px;
+    font-size:38px;
   }
 
-  .hero p{
-    font-size:15px;
+  .services{
+    grid-template-columns:1fr;
   }
 
   .btn{
+    width:100%;
+  }
+
+  .phone{
     width:100%;
   }
 }
@@ -240,7 +277,8 @@ footer{
 <nav>
   <div class="logo">برادران حبیبی</div>
 
-  <div>
+  <div class="nav-links">
+    <a href="#home">خانه</a>
     <a href="#services">خدمات</a>
     <a href="#contact">تماس با ما</a>
   </div>
@@ -249,7 +287,8 @@ footer{
 
 <main>
 
-<section class="hero">
+<section class="hero" id="home">
+
   <div class="badge">خدمات سریع و مطمئن</div>
 
   <h1>
@@ -263,95 +302,140 @@ footer{
   </p>
 
   <div class="buttons">
-    <a class="btn btn-primary" href="tel:09338486503">
+    <a class="btn primary" href="tel:09338486503">
       📞 تماس با ما
     </a>
 
-    <a class="btn btn-secondary"
+    <a class="btn secondary"
        href="https://wa.me/989338486503"
        target="_blank">
       💬 واتساپ
     </a>
   </div>
+
 </section>
+
 
 <section id="services">
 
-<div class="title">
-  <h2>خدمات ما</h2>
-  <p>برای دریافت خدمات مورد نیازتان با ما تماس بگیرید.</p>
-</div>
+  <h2 class="section-title">خدمات ما</h2>
 
-<div class="cards">
-
-<div class="card">
-  <div class="icon">💰</div>
-  <h3>خدمات پولی</h3>
-  <p>
-    انجام خدمات پولی و انتقال وجه با سرعت و دقت.
+  <p class="section-text">
+    خدمات مورد نیازتان را سریع و آسان دریافت کنید.
   </p>
-</div>
 
-<div class="card">
-  <div class="icon">🌐</div>
-  <h3>خدمات اینترنتی</h3>
-  <p>
-    انجام انواع خدمات اینترنتی و آنلاین برای شما.
-  </p>
-</div>
+  <div class="services">
 
-<div class="card">
-  <div class="icon">📱</div>
-  <h3>خدمات آنلاین</h3>
-  <p>
-    راهنمایی و انجام خدمات آنلاین به صورت آسان و سریع.
-  </p>
-</div>
+    <div class="card">
+      <div class="icon">💰</div>
+      <h3>خدمات پولی</h3>
+      <p>
+        انجام خدمات و امور پولی با سرعت و دقت.
+      </p>
+    </div>
 
-</div>
+    <div class="card">
+      <div class="icon">🌐</div>
+      <h3>خدمات اینترنتی</h3>
+      <p>
+        ارائه خدمات مختلف اینترنتی به صورت سریع و آسان.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="icon">📱</div>
+      <h3>خدمات آنلاین</h3>
+      <p>
+        انجام درخواست‌های آنلاین و خدمات مورد نیاز شما.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="icon">⚡</div>
+      <h3>خدمات سریع</h3>
+      <p>
+        تلاش می‌کنیم درخواست شما را در کوتاه‌ترین زمان انجام دهیم.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🤝</div>
+      <h3>پشتیبانی</h3>
+      <p>
+        برای دریافت راهنمایی و پشتیبانی با ما تماس بگیرید.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🔒</div>
+      <h3>اعتماد و اطمینان</h3>
+      <p>
+        ارائه خدمات با رعایت دقت و احترام به مشتریان.
+      </p>
+    </div>
+
+  </div>
 </section>
+
 
 <section id="contact">
 
-<div class="contact">
+  <div class="contact-box">
 
-  <h2>با ما در تماس باشید</h2>
+    <h2 class="section-title">
+      تماس با ما
+    </h2>
 
-  <p>
-    برای دریافت اطلاعات و سفارش خدمات با ما تماس بگیرید.
-  </p>
+    <p class="section-text">
+      برای دریافت خدمات با ما در تماس باشید.
+    </p>
 
-  <a class="phone" href="tel:09338486503">
-    09338486503
-  </a>
+    <div class="phone-list">
 
-  <a class="phone" href="tel:09911976038">
-    09911976038
-  </a>
+      <a class="phone" href="tel:09338486503">
+        📞 09338486503
+      </a>
 
-  <div class="buttons" style="margin-top:20px;">
+      <a class="phone" href="tel:09911976038">
+        📞 09911976038
+      </a>
 
-    <a class="btn btn-primary"
-       href="tel:09338486503">
-       تماس تلفنی
-    </a>
+    </div>
 
-    <a class="btn btn-secondary"
-       href="https://wa.me/989911976038"
-       target="_blank">
-       واتساپ
-    </a>
+    <div class="buttons" style="margin-top:25px;">
+
+      <a class="btn primary"
+         href="https://wa.me/989338486503"
+         target="_blank">
+        💬 واتساپ شماره اول
+      </a>
+
+      <a class="btn secondary"
+         href="https://wa.me/989911976038"
+         target="_blank">
+        💬 واتساپ شماره دوم
+      </a>
+
+    </div>
 
   </div>
-
-</div>
 
 </section>
 
 </main>
 
+
+<a class="whatsapp"
+   href="https://wa.me/989338486503"
+   target="_blank"
+   aria-label="واتساپ">
+  💬
+</a>
+
+
 <footer>
-  © 2026 خدمات پولی و اینترنتی برادران حبیبی
+  <p>© 2026 خدمات پولی و اینترنتی برادران حبیبی</p>
+  <p>تمام حقوق محفوظ است.</p>
 </footer>
 
 </body>
