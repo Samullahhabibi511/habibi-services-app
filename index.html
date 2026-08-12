@@ -1,80 +1,358 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="خدمات پولی و اینترنتی برادران حبیبی؛ خرید UC پابجی، کریدت، بسته اینترنت، الماس IMO و خدمات حواله به افغانستان.">
-<meta name="theme-color" content="#07111f">
-<title>برادران حبیبی | خدمات پولی و اینترنتی</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="خدمات پولی و اینترنتی برادران حبیبی">
+
+<title>خدمات پولی و اینترنتی برادران حبیبی</title>
+
 <style>
-:root{--bg:#050b14;--card:#0b1626;--gold:#f7c948;--gold2:#ffdf72;--text:#f5f7fb;--muted:#aeb8c7;--line:#20324b;--green:#25d366;--blue:#22a7ff}
-*{box-sizing:border-box}body{margin:0;font-family:Tahoma,"Segoe UI",sans-serif;background:radial-gradient(circle at 80% 0,#142844 0,#07111f 35%,#03070d 100%);color:var(--text);line-height:1.8}
-a{text-decoration:none;color:inherit}.wrap{max-width:1120px;margin:auto;padding:0 18px}
-header{position:sticky;top:0;z-index:10;background:rgba(4,10,18,.88);backdrop-filter:blur(12px);border-bottom:1px solid #1c2b40}
-nav{display:flex;align-items:center;justify-content:space-between;min-height:70px}.brand{font-weight:900;font-size:22px;color:var(--gold)}.navlinks{display:flex;gap:20px;color:#dbe4ef;font-size:14px}
-.hero{padding:70px 0 45px}.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:30px;align-items:center}
-.badge{display:inline-block;border:1px solid #7d6120;background:rgba(247,201,72,.08);color:var(--gold2);padding:7px 13px;border-radius:999px;font-size:13px}
-h1{font-size:clamp(38px,6vw,70px);line-height:1.15;margin:18px 0 12px}h1 span{color:var(--gold)}.lead{color:var(--muted);font-size:18px;max-width:700px}
-.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}.btn{padding:12px 19px;border-radius:13px;font-weight:800;border:1px solid var(--line);background:#0d1b2d}.btn.gold{background:linear-gradient(135deg,#f0b92f,#ffe58a);color:#111;border:0}.btn.green{background:#159447;border:0}
-.qrbox{background:linear-gradient(145deg,#0d1c30,#07111d);border:1px solid #324863;border-radius:24px;padding:20px;text-align:center;box-shadow:0 20px 60px #0008}.qrbox img{width:100%;max-width:310px;border-radius:12px;background:#fff}.qrbox b{display:block;color:var(--gold);margin:10px 0 0}
-section{padding:48px 0}.title{text-align:center;margin-bottom:28px}.title h2{font-size:31px;margin:0 0 5px}.title p{color:var(--muted);margin:0}
-.cards{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}.card{background:linear-gradient(145deg,#0c192a,#08111e);border:1px solid var(--line);border-radius:18px;padding:20px;text-align:center}.icon{font-size:35px}.card h3{margin:8px 0;color:#fff;font-size:17px}.card p{margin:0;color:var(--muted);font-size:13px}
-.contact{display:grid;grid-template-columns:1fr 1fr;gap:20px}.panel{background:#091522;border:1px solid var(--line);border-radius:22px;padding:28px}.numbers{display:grid;gap:12px;margin-top:15px}.number{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 16px;border-radius:14px;background:#0e2034;font-size:21px;font-weight:900;direction:ltr}.number a{color:#fff}.wa{color:var(--green)}
-.notice{border-right:4px solid var(--gold);background:#0b1725;padding:16px 18px;border-radius:12px;color:#d9e2ed}
-footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);text-align:center}
-@media(max-width:850px){.hero-grid,.contact{grid-template-columns:1fr}.cards{grid-template-columns:repeat(2,1fr)}.navlinks{display:none}}
-@media(max-width:480px){.cards{grid-template-columns:1fr}.number{font-size:17px}.hero{padding-top:40px}}
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family:Tahoma,Arial,sans-serif;
+  background:#06121f;
+  color:#fff;
+  line-height:1.9;
+}
+
+header{
+  position:sticky;
+  top:0;
+  z-index:100;
+  background:rgba(6,18,31,.95);
+  border-bottom:1px solid #19334b;
+  backdrop-filter:blur(10px);
+}
+
+nav{
+  max-width:1100px;
+  margin:auto;
+  padding:16px 20px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:15px;
+}
+
+.logo{
+  font-size:20px;
+  font-weight:bold;
+  color:#f5c542;
+}
+
+nav a{
+  text-decoration:none;
+  color:#fff;
+  margin-right:15px;
+  font-size:14px;
+}
+
+.hero{
+  max-width:1100px;
+  margin:auto;
+  padding:80px 20px 60px;
+  text-align:center;
+}
+
+.badge{
+  display:inline-block;
+  padding:6px 16px;
+  border:1px solid #f5c542;
+  border-radius:30px;
+  color:#f5c542;
+  margin-bottom:20px;
+}
+
+h1{
+  font-size:clamp(32px,7vw,65px);
+  line-height:1.35;
+  margin-bottom:18px;
+}
+
+.hero p{
+  color:#b8c7d6;
+  max-width:700px;
+  margin:0 auto 30px;
+  font-size:17px;
+}
+
+.buttons{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:12px;
+}
+
+.btn{
+  display:inline-block;
+  text-decoration:none;
+  padding:12px 25px;
+  border-radius:12px;
+  font-weight:bold;
+  border:1px solid #f5c542;
+  transition:.2s;
+}
+
+.btn-primary{
+  background:#f5c542;
+  color:#06121f;
+}
+
+.btn-secondary{
+  color:#fff;
+  background:#10263a;
+}
+
+.btn:hover{
+  transform:translateY(-2px);
+}
+
+section{
+  max-width:1100px;
+  margin:auto;
+  padding:55px 20px;
+}
+
+.title{
+  text-align:center;
+  margin-bottom:30px;
+}
+
+.title h2{
+  font-size:30px;
+  margin-bottom:8px;
+}
+
+.title p{
+  color:#9fb0c1;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+
+.card{
+  background:#0b1b2b;
+  border:1px solid #1b3852;
+  border-radius:18px;
+  padding:25px;
+  transition:.2s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+  border-color:#f5c542;
+}
+
+.icon{
+  font-size:35px;
+  margin-bottom:10px;
+}
+
+.card h3{
+  color:#f5c542;
+  margin-bottom:8px;
+}
+
+.card p{
+  color:#aebdcc;
+  font-size:14px;
+}
+
+.contact{
+  background:linear-gradient(135deg,#0b1b2b,#102c43);
+  border:1px solid #21445f;
+  border-radius:22px;
+  padding:35px 25px;
+  text-align:center;
+}
+
+.contact h2{
+  margin-bottom:10px;
+}
+
+.phone{
+  display:block;
+  color:#f5c542;
+  font-size:22px;
+  font-weight:bold;
+  text-decoration:none;
+  margin:8px;
+  direction:ltr;
+}
+
+footer{
+  text-align:center;
+  padding:30px 20px;
+  border-top:1px solid #19334b;
+  color:#8193a6;
+  font-size:13px;
+}
+
+@media(max-width:750px){
+  nav{
+    padding:13px 15px;
+  }
+
+  nav a{
+    display:none;
+  }
+
+  .hero{
+    padding:60px 18px 40px;
+  }
+
+  .cards{
+    grid-template-columns:1fr;
+  }
+
+  section{
+    padding:40px 18px;
+  }
+
+  h1{
+    font-size:36px;
+  }
+
+  .hero p{
+    font-size:15px;
+  }
+
+  .btn{
+    width:100%;
+  }
+}
 </style>
 </head>
+
 <body>
-<header><div class="wrap"><nav>
-<a class="brand" href="#">برادران حبیبی</a>
-<div class="navlinks"><a href="#services">خدمات</a><a href="#order">سفارش</a><a href="#contact">تماس</a></div>
-</nav></div></header>
+
+<header>
+<nav>
+  <div class="logo">برادران حبیبی</div>
+
+  <div>
+    <a href="#services">خدمات</a>
+    <a href="#contact">تماس با ما</a>
+  </div>
+</nav>
+</header>
 
 <main>
-<section class="hero"><div class="wrap hero-grid">
-<div>
-<span class="badge">سریع • مطمئن • پاسخ‌گویی ۲۴ ساعته</span>
-<h1>خدمات پولی و اینترنتی<br><span>برادران حبیبی</span></h1>
-<p class="lead">خرید UC پابجی موبایل، کریدت و بسته‌های اینترنت افغانستان، الماس IMO و خدمات حواله به تمام نقاط افغانستان؛ سفارش سریع از طریق واتساپ.</p>
-<div class="btns">
-<a class="btn green" href="https://wa.me/9893338486503?text=سلام، برای سفارش خدمات برادران حبیبی پیام می‌دهم." target="_blank">💬 سفارش در واتساپ</a>
-<a class="btn gold" href="#services">مشاهده خدمات</a>
-</div>
-</div>
-<div class="qrbox"><img src="assets/whatsapp-qr.jpg" alt="کد اسکن کانال واتساپ"><b>اسکن کنید و وارد کانال واتساپ شوید</b></div>
-</div></section>
 
-<section id="services"><div class="wrap">
-<div class="title"><h2>خدمات ما</h2><p>خدمات مورد نیازتان را انتخاب و برای سفارش پیام بدهید.</p></div>
+<section class="hero">
+  <div class="badge">خدمات سریع و مطمئن</div>
+
+  <h1>
+    خدمات پولی و اینترنتی<br>
+    برادران حبیبی
+  </h1>
+
+  <p>
+    ارائه خدمات پولی و اینترنتی با کیفیت،
+    سریع و آسان برای شما.
+  </p>
+
+  <div class="buttons">
+    <a class="btn btn-primary" href="tel:09338486503">
+      📞 تماس با ما
+    </a>
+
+    <a class="btn btn-secondary"
+       href="https://wa.me/989338486503"
+       target="_blank">
+      💬 واتساپ
+    </a>
+  </div>
+</section>
+
+<section id="services">
+
+<div class="title">
+  <h2>خدمات ما</h2>
+  <p>برای دریافت خدمات مورد نیازتان با ما تماس بگیرید.</p>
+</div>
+
 <div class="cards">
-<div class="card"><div class="icon">🎮</div><h3>UC پابجی</h3><p>خرید UC پابجی موبایل با قیمت مناسب</p></div>
-<div class="card"><div class="icon">📱</div><h3>کریدت و اینترنت</h3><p>شارژ کریدت و بسته‌های اینترنت افغانستان</p></div>
-<div class="card"><div class="icon">💎</div><h3>الماس IMO</h3><p>ارسال الماس IMO با قیمت مناسب</p></div>
-<div class="card"><div class="icon">💰</div><h3>حواله</h3><p>ارسال حواله به تمام نقاط افغانستان</p></div>
-<div class="card"><div class="icon">🎁</div><h3>گیفت پابجی</h3><p>گیفت، ایکس‌سوت و ماشین‌های پابجی</p></div>
-</div></div></section>
 
-<section id="order"><div class="wrap">
-<div class="title"><h2>سفارش سریع</h2><p>برای قیمت روز و ثبت سفارش مستقیماً پیام بفرستید.</p></div>
-<div class="notice">⚡ خدمات UC، کریدت، اینترنت و الماس با سرعت بالا اجرا می‌شود. زمان تحویل بعضی گیفت‌ها و ماشین‌های پابجی بسته به نوع سفارش ممکن است ۷۲ تا ۹۶ ساعت باشد.</div>
-</div></section>
+<div class="card">
+  <div class="icon">💰</div>
+  <h3>خدمات پولی</h3>
+  <p>
+    انجام خدمات پولی و انتقال وجه با سرعت و دقت.
+  </p>
+</div>
 
-<section id="contact"><div class="wrap contact">
-<div class="panel"><div class="title" style="text-align:right"><h2>تماس و واتساپ</h2><p>برای سفارش یا دریافت قیمت روز</p></div>
-<div class="numbers">
-<div class="number"><a href="tel:09338486503">09338486503</a><span class="wa">☎︎</span></div>
-<div class="number"><a href="tel:09911976038">09911976038</a><span class="wa">☎︎</span></div>
+<div class="card">
+  <div class="icon">🌐</div>
+  <h3>خدمات اینترنتی</h3>
+  <p>
+    انجام انواع خدمات اینترنتی و آنلاین برای شما.
+  </p>
 </div>
-<div class="btns"><a class="btn green" href="https://wa.me/9893338486503" target="_blank">واتساپ شماره اول</a><a class="btn green" href="https://wa.me/989911976038" target="_blank">واتساپ شماره دوم</a></div>
+
+<div class="card">
+  <div class="icon">📱</div>
+  <h3>خدمات آنلاین</h3>
+  <p>
+    راهنمایی و انجام خدمات آنلاین به صورت آسان و سریع.
+  </p>
 </div>
-<div class="panel"><div class="title" style="text-align:right"><h2>اعتماد از شما ❤️ خدمات از ما</h2><p>خرید و فروش اکانت با هماهنگی و واسطه‌گری</p></div>
-<p>برای هر سفارش، قبل از پرداخت قیمت و شرایط نهایی را از پشتیبانی دریافت کنید. این سایت در نسخه فعلی پرداخت آنلاین انجام نمی‌دهد و سفارش‌ها از طریق واتساپ ثبت می‌شوند.</p>
+
 </div>
-</div></section>
+</section>
+
+<section id="contact">
+
+<div class="contact">
+
+  <h2>با ما در تماس باشید</h2>
+
+  <p>
+    برای دریافت اطلاعات و سفارش خدمات با ما تماس بگیرید.
+  </p>
+
+  <a class="phone" href="tel:09338486503">
+    09338486503
+  </a>
+
+  <a class="phone" href="tel:09911976038">
+    09911976038
+  </a>
+
+  <div class="buttons" style="margin-top:20px;">
+
+    <a class="btn btn-primary"
+       href="tel:09338486503">
+       تماس تلفنی
+    </a>
+
+    <a class="btn btn-secondary"
+       href="https://wa.me/989911976038"
+       target="_blank">
+       واتساپ
+    </a>
+
+  </div>
+
+</div>
+
+</section>
+
 </main>
 
-<footer><div class="wrap">© 2026 خدمات پولی و اینترنتی برادران حبیبی — تمامی حقوق محفوظ است.</div></footer>
+<footer>
+  © 2026 خدمات پولی و اینترنتی برادران حبیبی
+</footer>
+
 </body>
 </html>
