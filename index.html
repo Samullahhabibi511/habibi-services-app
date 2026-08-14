@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#111827">
+<meta name="description" content="خدمات پولی و اینترنتی برادران Habibi">
 
-<meta name="description" content="خدمات پولی و اینترنتی برادران حبیبی">
-
-<title>خدمات پولی و اینترنتی | برادران حبیبی</title>
+<title>خدمات پولی و اینترنتی برادران Habibi</title>
 
 <style>
 *{
@@ -15,428 +15,537 @@
   padding:0;
 }
 
-html{
-  scroll-behavior:smooth;
-}
-
 body{
   font-family:Tahoma,Arial,sans-serif;
-  background:#06121f;
-  color:#fff;
+  background:#f3f4f6;
+  color:#172033;
   line-height:1.8;
 }
 
-a{
-  text-decoration:none;
-  color:inherit;
-}
-
-header{
-  position:sticky;
-  top:0;
-  z-index:1000;
-  background:rgba(6,18,31,.96);
-  border-bottom:1px solid #26384a;
-  backdrop-filter:blur(10px);
-}
-
-nav{
-  max-width:1100px;
+.container{
+  width:100%;
+  max-width:600px;
   margin:auto;
-  min-height:72px;
-  padding:12px 20px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
+  padding:15px;
+}
+
+/* Header */
+.header{
+  background:linear-gradient(135deg,#111827,#1f2937);
+  color:white;
+  padding:25px 18px;
+  border-radius:0 0 28px 28px;
+  text-align:center;
+  box-shadow:0 8px 25px rgba(0,0,0,.18);
 }
 
 .logo{
-  color:#f5c542;
-  font-size:22px;
-  font-weight:bold;
-}
-
-.nav-links{
+  width:75px;
+  height:75px;
+  margin:auto;
+  border-radius:50%;
   display:flex;
-  gap:22px;
   align-items:center;
+  justify-content:center;
+  background:linear-gradient(135deg,#f59e0b,#f97316);
+  color:white;
+  font-size:27px;
+  font-weight:bold;
+  box-shadow:0 5px 18px rgba(0,0,0,.25);
 }
 
-.nav-links a{
-  color:#fff;
+.header h1{
+  font-size:22px;
+  margin-top:12px;
+}
+
+.header p{
+  color:#d1d5db;
   font-size:14px;
 }
 
-.nav-links a:hover{
-  color:#f5c542;
-}
-
-.hero{
-  max-width:1100px;
-  margin:auto;
-  padding:75px 20px 65px;
-  text-align:center;
-}
-
-.badge{
-  display:inline-block;
-  border:1px solid #f5c542;
-  color:#f5c542;
-  border-radius:30px;
-  padding:7px 18px;
-  margin-bottom:20px;
-}
-
-h1{
-  font-size:clamp(34px,7vw,64px);
-  line-height:1.35;
-  margin-bottom:18px;
-}
-
-.hero p{
-  max-width:720px;
-  margin:0 auto 30px;
-  color:#b8c7d6;
-  font-size:17px;
-}
-
-.buttons{
-  display:flex;
-  justify-content:center;
-  flex-wrap:wrap;
-  gap:12px;
-}
-
+/* Buttons */
 .btn{
-  display:inline-block;
-  padding:13px 25px;
-  border-radius:14px;
+  display:block;
+  width:100%;
+  border:0;
+  border-radius:15px;
+  padding:14px;
+  margin-top:10px;
+  font-size:16px;
   font-weight:bold;
-  border:1px solid #f5c542;
-  transition:.2s;
+  cursor:pointer;
+  text-align:center;
+  text-decoration:none;
 }
 
-.btn:hover{
-  transform:translateY(-2px);
+.whatsapp{
+  background:#25D366;
+  color:white;
 }
 
 .primary{
-  background:#f5c542;
-  color:#06121f;
+  background:#111827;
+  color:white;
 }
 
-.secondary{
-  background:#10283d;
-  color:#fff;
+.orange{
+  background:#f59e0b;
+  color:white;
 }
 
-section{
-  max-width:1100px;
-  margin:auto;
-  padding:55px 20px;
-}
-
+/* Cards */
 .section-title{
-  text-align:center;
-  font-size:34px;
-  margin-bottom:10px;
-}
-
-.section-text{
-  text-align:center;
-  color:#9fb0c1;
-  margin-bottom:30px;
+  font-size:20px;
+  margin:25px 3px 12px;
 }
 
 .services{
   display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:18px;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
 }
 
-.card{
-  background:linear-gradient(145deg,#0b1d2e,#10283d);
-  border:1px solid #263f55;
-  border-radius:20px;
-  padding:25px;
-  transition:.25s;
+.service{
+  background:white;
+  border-radius:18px;
+  padding:18px 10px;
+  text-align:center;
+  box-shadow:0 4px 15px rgba(0,0,0,.07);
+  border:1px solid #e5e7eb;
 }
 
-.card:hover{
-  transform:translateY(-5px);
-  border-color:#f5c542;
+.service .icon{
+  font-size:30px;
+  margin-bottom:5px;
 }
 
-.icon{
-  font-size:40px;
-  margin-bottom:10px;
-}
-
-.card h3{
-  color:#f5c542;
-  font-size:21px;
-  margin-bottom:8px;
-}
-
-.card p{
-  color:#b8c7d6;
+.service h3{
   font-size:15px;
 }
 
-.contact-box{
-  background:linear-gradient(145deg,#0d2236,#102b42);
-  border:1px solid #f5c542;
-  border-radius:25px;
-  padding:35px 20px;
+.service p{
+  font-size:12px;
+  color:#6b7280;
+}
+
+/* Main cards */
+.box{
+  background:white;
+  padding:18px;
+  margin-top:14px;
+  border-radius:20px;
+  box-shadow:0 4px 18px rgba(0,0,0,.07);
+}
+
+.box h2{
+  font-size:19px;
+  margin-bottom:8px;
+}
+
+.info{
+  background:#f9fafb;
+  border-radius:13px;
+  padding:12px;
+  margin-top:10px;
+  font-size:14px;
+}
+
+/* Bank */
+.bank{
+  border:1px solid #e5e7eb;
+  background:#fafafa;
+  border-radius:16px;
+  padding:15px;
+  margin-top:12px;
+}
+
+.bank-title{
+  font-weight:bold;
+  font-size:17px;
+  margin-bottom:8px;
+}
+
+.bank-number{
+  direction:ltr;
   text-align:center;
+  background:#111827;
+  color:white;
+  padding:12px 5px;
+  border-radius:10px;
+  font-size:17px;
+  letter-spacing:1px;
+  word-break:break-all;
 }
 
-.phone-list{
-  display:flex;
-  justify-content:center;
-  flex-wrap:wrap;
-  gap:12px;
-  margin-top:25px;
+.bank p{
+  font-size:13px;
+  margin-top:6px;
 }
 
-.phone{
-  background:#06121f;
-  border:1px solid #f5c542;
-  border-radius:14px;
-  padding:13px 20px;
-  color:#fff;
+/* Receipt */
+.receipt{
+  border:2px dashed #d1d5db;
+  padding:20px;
+  text-align:center;
+  border-radius:18px;
+  margin-top:12px;
 }
 
-.phone:hover{
-  background:#f5c542;
-  color:#06121f;
+.file-label{
+  display:block;
+  background:#111827;
+  color:white;
+  padding:14px;
+  border-radius:13px;
+  cursor:pointer;
+  font-weight:bold;
 }
 
+#receipt{
+  display:none;
+}
+
+#fileName{
+  margin-top:10px;
+  font-size:13px;
+  color:#16a34a;
+}
+
+/* Footer */
 footer{
-  border-top:1px solid #26384a;
   text-align:center;
-  padding:30px 20px;
-  color:#8fa2b5;
-  margin-top:30px;
+  color:#6b7280;
+  font-size:12px;
+  padding:30px 10px;
 }
 
-.whatsapp{
-  position:fixed;
-  left:18px;
-  bottom:18px;
-  width:58px;
-  height:58px;
-  border-radius:50%;
-  background:#25d366;
-  color:#fff;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:27px;
-  box-shadow:0 5px 20px rgba(0,0,0,.35);
-  z-index:2000;
+.badge{
+  display:inline-block;
+  background:#ecfdf5;
+  color:#15803d;
+  padding:5px 12px;
+  border-radius:30px;
+  font-size:12px;
+  margin-top:8px;
 }
 
-@media(max-width:800px){
-  .services{
-    grid-template-columns:1fr 1fr;
-  }
-
-  .nav-links{
-    display:none;
-  }
+.notice{
+  background:#fff7ed;
+  color:#9a3412;
+  border-right:4px solid #f97316;
+  padding:12px;
+  border-radius:10px;
+  font-size:13px;
+  margin-top:10px;
 }
 
-@media(max-width:550px){
-  .hero{
-    padding-top:60px;
-  }
-
-  h1{
-    font-size:38px;
-  }
-
-  .services{
-    grid-template-columns:1fr;
-  }
-
-  .btn{
-    width:100%;
-  }
-
-  .phone{
-    width:100%;
-  }
+hr{
+  border:0;
+  border-top:1px solid #e5e7eb;
+  margin:15px 0;
 }
 </style>
 </head>
 
 <body>
 
-<header>
-<nav>
-  <div class="logo">برادران حبیبی</div>
+<header class="header">
 
-  <div class="nav-links">
-    <a href="#home">خانه</a>
-    <a href="#services">خدمات</a>
-    <a href="#contact">تماس با ما</a>
-  </div>
-</nav>
+  <div class="logo">HB</div>
+
+  <h1>خدمات پولی و اینترنتی برادران Habibi</h1>
+
+  <p>سریع • مطمئن • قابل اعتماد</p>
+
+  <span class="badge">ارائه خدمات به افغانستان</span>
+
 </header>
 
-<main>
+<div class="container">
 
-<section class="hero" id="home">
+  <!-- تماس -->
+  <h2 class="section-title">📞 تماس با ما</h2>
 
-  <div class="badge">خدمات سریع و مطمئن</div>
+  <a class="btn whatsapp"
+     href="https://wa.me/989338486503"
+     target="_blank">
+     واتساپ شماره اول
+  </a>
 
-  <h1>
-    خدمات پولی و اینترنتی<br>
-    برادران حبیبی
-  </h1>
-
-  <p>
-    ارائه خدمات پولی و اینترنتی با کیفیت،
-    سریع و آسان برای شما.
-  </p>
-
-  <div class="buttons">
-    <a class="btn primary" href="tel:09338486503">
-      📞 تماس با ما
-    </a>
-
-    <a class="btn secondary"
-       href="https://wa.me/989338486503"
-       target="_blank">
-      💬 واتساپ
-    </a>
-  </div>
-
-</section>
+  <a class="btn whatsapp"
+     href="https://wa.me/989911976038"
+     target="_blank">
+     واتساپ شماره دوم
+  </a>
 
 
-<section id="services">
-
-  <h2 class="section-title">خدمات ما</h2>
-
-  <p class="section-text">
-    خدمات مورد نیازتان را سریع و آسان دریافت کنید.
-  </p>
+  <!-- خدمات -->
+  <h2 class="section-title">🛠 خدمات ما</h2>
 
   <div class="services">
 
-    <div class="card">
-      <div class="icon">💰</div>
-      <h3>خدمات پولی</h3>
-      <p>
-        انجام خدمات و امور پولی با سرعت و دقت.
-      </p>
+    <div class="service">
+      <div class="icon">💸</div>
+      <h3>حواله</h3>
+      <p>ارسال حواله به افغانستان</p>
     </div>
 
-    <div class="card">
-      <div class="icon">🌐</div>
-      <h3>خدمات اینترنتی</h3>
-      <p>
-        ارائه خدمات مختلف اینترنتی به صورت سریع و آسان.
-      </p>
-    </div>
-
-    <div class="card">
+    <div class="service">
       <div class="icon">📱</div>
-      <h3>خدمات آنلاین</h3>
-      <p>
-        انجام درخواست‌های آنلاین و خدمات مورد نیاز شما.
-      </p>
+      <h3>کریدت</h3>
+      <p>ارسال کریدت به افغانستان</p>
     </div>
 
-    <div class="card">
-      <div class="icon">⚡</div>
-      <h3>خدمات سریع</h3>
-      <p>
-        تلاش می‌کنیم درخواست شما را در کوتاه‌ترین زمان انجام دهیم.
-      </p>
+    <div class="service">
+      <div class="icon">🌐</div>
+      <h3>بسته اینترنت</h3>
+      <p>ارسال بسته‌های اینترنت</p>
     </div>
 
-    <div class="card">
-      <div class="icon">🤝</div>
-      <h3>پشتیبانی</h3>
-      <p>
-        برای دریافت راهنمایی و پشتیبانی با ما تماس بگیرید.
-      </p>
+    <div class="service">
+      <div class="icon">🎮</div>
+      <h3>PUBG UC</h3>
+      <p>ارسال یوسی پابجی موبایل</p>
     </div>
 
-    <div class="card">
-      <div class="icon">🔒</div>
-      <h3>اعتماد و اطمینان</h3>
-      <p>
-        ارائه خدمات با رعایت دقت و احترام به مشتریان.
-      </p>
+    <div class="service">
+      <div class="icon">💎</div>
+      <h3>الماس IMO</h3>
+      <p>ارسال الماس ایمو</p>
+    </div>
+
+    <div class="service">
+      <div class="icon">🎁</div>
+      <h3>گیفت پابجی</h3>
+      <p>ماشین و X-Suit</p>
     </div>
 
   </div>
-</section>
 
 
-<section id="contact">
+  <!-- حواله -->
+  <div class="box">
 
-  <div class="contact-box">
+    <h2>💸 ثبت درخواست حواله</h2>
 
-    <h2 class="section-title">
-      ارتباط  با ما
-    </h2>
+    <div class="info">
+      برای ثبت درخواست حواله، مبلغ و مشخصات گیرنده را آماده کنید و
+      از طریق واتساپ با ما تماس بگیرید.
+    </div>
 
-    <p class="section-text">
-      برای دریافت خدمات پولی و اینترنتی از راه های زیر با ما در تماس باشید.
+    <a class="btn whatsapp"
+       href="https://wa.me/989338486503?text=سلام،%20برای%20حواله%20می‌خواهم%20درخواست%20ثبت%20کنم."
+       target="_blank">
+       ثبت درخواست حواله
+    </a>
+
+  </div>
+
+
+  <!-- PUBG -->
+  <div class="box">
+
+    <h2>🎮 خدمات PUBG Mobile</h2>
+
+    <div class="info">
+      ارسال UC، گیفت ماشین و X-Suit پابجی موبایل.
+    </div>
+
+    <a class="btn orange"
+       href="https://wa.me/989338486503?text=سلام،%20برای%20خدمات%20PUBG%20Mobile%20می‌خواهم%20درخواست%20ثبت%20کنم."
+       target="_blank">
+       سفارش PUBG
+    </a>
+
+  </div>
+
+
+  <!-- پرداخت -->
+  <div class="box">
+
+    <h2>💳 پرداخت و واریز وجه</h2>
+
+    <div class="notice">
+      لطفاً قبل از واریز، مشخصات کارت را با دقت بررسی کنید.
+      پس از پرداخت، تصویر فیش را ارسال کنید.
+    </div>
+
+
+    <!-- کارت اول -->
+    <div class="bank">
+
+      <div class="bank-title">💳 کارت اول</div>
+
+      <div class="bank-number">
+        5892101637483682
+      </div>
+
+      <p>
+        👤 بنام:
+        <strong>علی رضا خانی علی کردی</strong>
+      </p>
+
+      <p>
+        🏦 شبا:
+        <strong>830150000001630301009306</strong>
+      </p>
+
+    </div>
+
+
+    <!-- کارت دوم -->
+    <div class="bank">
+
+      <div class="bank-title">💳 کارت دوم</div>
+
+      <div class="bank-number">
+        6219861822217419
+      </div>
+
+      <p>
+        🏦 شبا:
+        <strong>IR390560611828006270</strong>
+      </p>
+
+      <p>
+        👤 بنام:
+        <strong>خلیلی باصری</strong>
+      </p>
+
+      <p>
+        کد:
+        <strong>955501</strong>
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <!-- ارسال فیش -->
+  <div class="box">
+
+    <h2>🧾 ارسال فیش واریزی</h2>
+
+    <div class="info">
+      بعد از واریز، تصویر فیش پرداخت را از گوشی انتخاب کنید
+      و سپس آن را از طریق واتساپ ارسال کنید.
+    </div>
+
+    <div class="receipt">
+
+      <label class="file-label" for="receipt">
+        📷 انتخاب عکس فیش
+      </label>
+
+      <input
+        id="receipt"
+        type="file"
+        accept="image/*"
+        onchange="showFileName(this)"
+      >
+
+      <div id="fileName"></div>
+
+      <button
+        class="btn whatsapp"
+        onclick="sendReceipt()">
+        📤 ارسال فیش در واتساپ
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <!-- تماس -->
+  <div class="box">
+
+    <h2>📞 پشتیبانی</h2>
+
+    <p>
+      برای پیگیری سفارش، پرداخت، حواله و سایر خدمات
+      با پشتیبانی تماس بگیرید.
     </p>
 
-    <div class="phone-list">
-
-      <a class="phone" href="tel:09338486503">
-        📞 09338486503
-      </a>
-
-      <a class="phone" href="tel:09911976038">
-        📞 09911976038
-      </a>
-
-    </div>
-
-    <div class="buttons" style="margin-top:25px;">
-
-      <a class="btn primary"
-         href="https://wa.me/989338486503"
-         target="_blank">
-        💬 واتساپ شماره اول
-      </a>
-
-      <a class="btn secondary"
-         href="https://wa.me/989911976038"
-         target="_blank">
-        💬 واتساپ شماره دوم
-      </a>
-
-    </div>
+    <a class="btn whatsapp"
+       href="https://wa.me/989338486503"
+       target="_blank">
+       تماس با پشتیبانی
+    </a>
 
   </div>
 
-</section>
-
-</main>
-
-
-<a class="whatsapp"
-   href="https://wa.me/989338486503"
-   target="_blank"
-   aria-label="واتساپ">
-  💬
-</a>
+</div>
 
 
 <footer>
-  <p>© 2026 خدمات پولی و اینترنتی برادران حبیبی</p>
-  <p>تمام حقوق محفوظ است.</p>
+
+  <strong>Habibi</strong>
+
+  <br>
+
+  خدمات پولی و اینترنتی برادران حبیبی
+
+  <br><br>
+
+  © 2026 Habibi Services
+
 </footer>
+
+
+<script>
+
+let selectedFile = null;
+
+function showFileName(input){
+
+  if(input.files && input.files.length > 0){
+
+    selectedFile = input.files[0];
+
+    document.getElementById("fileName").innerText =
+      "✅ فیش انتخاب شد: " + selectedFile.name;
+
+  }
+
+}
+
+
+async function sendReceipt(){
+
+  if(!selectedFile){
+
+    alert("لطفاً ابتدا عکس فیش واریزی را انتخاب کنید.");
+
+    return;
+  }
+
+  const phone = "989338486503";
+
+  const message =
+    "سلام، فیش واریزی خود را برای بررسی ارسال می‌کنم.";
+
+  /*
+    واتساپ امکان انتقال مستقیم فایل انتخاب‌شده
+    به لینک wa.me را در همه مرورگرها نمی‌دهد.
+    بنابراین ابتدا واتساپ باز می‌شود.
+  */
+
+  const whatsappUrl =
+    "https://wa.me/" + phone +
+    "?text=" + encodeURIComponent(message);
+
+  window.open(whatsappUrl, "_blank");
+
+  alert(
+    "واتساپ باز شد. لطفاً عکس فیش انتخاب‌شده را نیز در همان چت ارسال کنید."
+  );
+
+}
+
+</script>
 
 </body>
 </html>
