@@ -1,0 +1,13 @@
+{
+  "name": "خدمات پولی و اینترنتی برادران Habibi",
+  "short_name": "Habibi",
+  "description": "خدمات پولی، حواله و اینترنتی برادران Habibi",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#071d35",
+  "theme_color": "#0d5c63",
+  "lang": "fa",
+  "dir": "rtl",
+  "icons": []
+}
