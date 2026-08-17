@@ -1,612 +1,104 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fa" dir="rtl">
-<head> <link rel="manifest" href="./manifest.json">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<meta name="description" content="خدمات پولی و اینترنتی برادران حبیبی">
-
-<title>خدمات پولی و اینترنتی برادران حبیبی</title>
-
-<style>
-*{
-    box-sizing:border-box;
-    margin:0;
-    padding:0;
-}
-
-body{
-    font-family:Tahoma,Arial,sans-serif;
-    background:#f3f6f9;
-    color:#17202a;
-    line-height:1.8;
-}
-
-.container{
-    width:94%;
-    max-width:900px;
-    margin:auto;
-}
-
-/* HEADER */
-
-header{
-    background:linear-gradient(135deg,#071d35,#0d5c63,#12a889);
-    color:white;
-    padding:35px 15px;
-    text-align:center;
-    border-radius:0 0 30px 30px;
-    box-shadow:0 8px 25px rgba(0,0,0,.15);
-}
-
-.logo{
-    width:82px;
-    height:82px;
-    border-radius:50%;
-    margin:auto;
-    background:white;
-    color:#0d5c63;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:30px;
-    font-weight:bold;
-    box-shadow:0 5px 20px rgba(0,0,0,.25);
-}
-
-header h1{
-    margin-top:15px;
-    font-size:25px;
-}
-
-header p{
-    margin-top:5px;
-    opacity:.9;
-}
-
-/* CONTACT */
-
-.contact-box{
-    margin-top:-18px;
-    position:relative;
-}
-
-.contact{
-    background:white;
-    border-radius:20px;
-    padding:18px;
-    box-shadow:0 7px 25px rgba(0,0,0,.10);
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:12px;
-}
-
-.contact a{
-    text-decoration:none;
-    text-align:center;
-    padding:13px;
-    border-radius:12px;
-    color:white;
-    font-weight:bold;
-}
-
-.call{
-    background:#16a085;
-}
-
-.whatsapp{
-    background:#25d366;
-}
-
-/* TITLE */
-
-.section-title{
-    margin:30px 0 15px;
-    font-size:21px;
-    font-weight:bold;
-    color:#0d5c63;
-}
-
-/* SERVICES */
-
-.services{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:13px;
-}
-
-.service{
-    background:white;
-    padding:20px 12px;
-    text-align:center;
-    border-radius:18px;
-    box-shadow:0 5px 18px rgba(0,0,0,.07);
-    border:1px solid #e7ecef;
-}
-
-.service .icon{
-    font-size:32px;
-}
-
-.service h3{
-    font-size:16px;
-    margin-top:7px;
-}
-
-.service p{
-    font-size:13px;
-    color:#68727d;
-}
-
-/* BANK */
-
-.bank-card{
-    background:white;
-    margin-bottom:15px;
-    padding:20px;
-    border-radius:20px;
-    box-shadow:0 5px 20px rgba(0,0,0,.08);
-    border-right:5px solid #12a889;
-}
-
-.bank-title{
-    font-size:18px;
-    font-weight:bold;
-    color:#0d5c63;
-    margin-bottom:12px;
-}
-
-.info{
-    background:#f5f8fa;
-    border-radius:12px;
-    padding:10px;
-    margin:8px 0;
-    font-size:14px;
-    word-break:break-all;
-}
-
-.info strong{
-    display:block;
-    color:#555;
-    margin-bottom:3px;
-}
-
-/* COPY BUTTON */
-
-.copy-btn{
-    width:100%;
-    border:0;
-    background:#0d5c63;
-    color:white;
-    padding:10px;
-    border-radius:10px;
-    margin-top:5px;
-    cursor:pointer;
-    font-size:14px;
-}
-
-/* RECEIPT */
-
-.receipt{
-    background:white;
-    border-radius:22px;
-    padding:22px;
-    box-shadow:0 5px 20px rgba(0,0,0,.08);
-}
-
-.upload{
-    border:2px dashed #12a889;
-    border-radius:16px;
-    padding:30px 15px;
-    text-align:center;
-    cursor:pointer;
-    background:#f7fffc;
-}
-
-.upload input{
-    display:none;
-}
-
-.upload-icon{
-    font-size:42px;
-}
-
-#preview{
-    max-width:100%;
-    margin-top:18px;
-    border-radius:15px;
-    display:none;
-}
-
-.file-name{
-    margin-top:10px;
-    color:#555;
-    font-size:14px;
-}
-
-.send-btn{
-    width:100%;
-    border:0;
-    margin-top:15px;
-    padding:14px;
-    border-radius:13px;
-    background:linear-gradient(135deg,#0d5c63,#12a889);
-    color:white;
-    font-size:17px;
-    font-weight:bold;
-    cursor:pointer;
-}
-
-/* NOTICE */
-
-.notice{
-    background:#fff8e6;
-    border-right:5px solid #f2b01e;
-    padding:15px;
-    border-radius:13px;
-    margin-top:15px;
-    font-size:13px;
-}
-
-/* FOOTER */
-
-footer{
-    margin-top:35px;
-    background:#071d35;
-    color:white;
-    text-align:center;
-    padding:25px 15px;
-}
-
-footer strong{
-    color:#34d3b0;
-}
-
-@media(max-width:600px){
-
-    header h1{
-        font-size:21px;
-    }
-
-    .services{
-        grid-template-columns:1fr 1fr;
-    }
-
-    .contact{
-        grid-template-columns:1fr 1fr;
-    }
-}
-</style>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="Habibi Shop - خدمات پولی و اینترنتی حبیبی">
+  <title>Habibi Shop | حبیبی شاپ</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <div class="glow glow-a"></div><div class="glow glow-b"></div>
+  <header class="topbar">
+    <a class="brand" href="#home">
+      <span class="brand-mark">HB</span>
+      <span><b>HABIBI</b><small>SHOP</small></span>
+    </a>
+    <nav>
+      <a href="#home">خانه</a><a href="#services">خدمات</a><a href="#how">نحوه سفارش</a>
+      <button id="adminBtn" class="ghost">مدیریت</button>
+    </nav>
+  </header>
 
-<header>
-
-    <div class="logo">HB</div>
-
-    <h1>خدمات پولی و اینترنتی برادران حبیبی</h1>
-
-    <p>Habibi Brothers Services</p>
-
-    <p>مطمئن، سریع و قابل اعتماد</p>
-
-</header>
-
-
-<div class="container">
-
-    <!-- CONTACT -->
-
-    <div class="contact-box">
-
-        <div class="contact">
-
-            <a class="call" href="tel:09338486503">
-                📞 تماس با ما
-            </a>
-
-            <a class="whatsapp"
-               href="https://wa.me/989338486503"
-               target="_blank">
-                💬 واتساپ
-            </a>
-
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-copy">
+        <span class="pill">🇮🇷 ایران • 🇦🇫 افغانستان</span>
+        <h1>خدمات پولی و اینترنتی <em>حبیبی</em></h1>
+        <p>خدمات دیجیتال، گیم و ارسال خدمات به افغانستان؛ سفارش خود را ثبت کنید تا مستقیماً در واتساپ بررسی و اجرا شود.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#services">مشاهده خدمات</a>
+          <a class="btn secondary" id="heroWhatsApp" href="#" target="_blank">سفارش در واتساپ</a>
         </div>
+        <div class="trust"><span>✓ سفارش سریع</span><span>✓ خدمات متنوع</span><span>✓ پاسخ‌گویی در واتساپ</span></div>
+      </div>
+      <div class="hero-card">
+        <div class="orbit"></div>
+        <div class="hb-big">HB</div>
+        <div class="hero-card-title">HABIBI SHOP</div>
+        <div class="hero-card-sub">TRUST • SERVICE • SPEED</div>
+      </div>
+    </section>
 
+    <section id="services" class="section">
+      <div class="section-head">
+        <div><span class="eyebrow">SERVICES</span><h2>خدمات ما</h2></div>
+        <div class="search-wrap"><span>⌕</span><input id="search" placeholder="جستجوی خدمت..." autocomplete="off"></div>
+      </div>
+      <div id="categories" class="chips"></div>
+      <div id="serviceGrid" class="service-grid"></div>
+      <div id="empty" class="empty" hidden>خدمتی با این جستجو پیدا نشد.</div>
+    </section>
+
+    <section id="how" class="section how">
+      <div class="section-head"><div><span class="eyebrow">HOW IT WORKS</span><h2>نحوه سفارش</h2></div></div>
+      <div class="steps">
+        <div><b>01</b><h3>خدمت را انتخاب کنید</h3><p>خدمت و مقدار موردنظر خود را انتخاب کنید.</p></div>
+        <div><b>02</b><h3>اطلاعات سفارش</h3><p>آیدی، شماره یا توضیحات لازم را وارد کنید.</p></div>
+        <div><b>03</b><h3>ارسال به واتساپ</h3><p>سفارش آماده شده و با یک کلیک برای ما ارسال می‌شود.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="footer-brand">HB • HABIBI SHOP</div><p>خدمات پولی و اینترنتی حبیبی</p></footer>
+
+  <div id="orderModal" class="modal" hidden>
+    <div class="modal-box">
+      <button class="close" data-close>×</button>
+      <span class="eyebrow">NEW ORDER</span>
+      <h2 id="orderTitle">ثبت سفارش</h2>
+      <form id="orderForm">
+        <label>مقدار / بسته<select id="variant" required></select></label>
+        <label>نام شما<input id="customerName" required placeholder="نام"></label>
+        <label>شماره تماس / واتساپ<input id="customerPhone" required inputmode="tel" placeholder="شماره"></label>
+        <label id="targetLabel">آیدی / شماره گیرنده<input id="target" placeholder="اطلاعات گیرنده"></label>
+        <label>توضیحات<textarea id="notes" rows="3" placeholder="اگر توضیح دیگری دارید..."></textarea></label>
+        <button class="btn primary full" type="submit">ارسال سفارش به واتساپ</button>
+      </form>
     </div>
+  </div>
 
-
-    <!-- SERVICES -->
-
-    <h2 class="section-title">
-        🛍️ خدمات ما
-    </h2>
-
-    <div class="services">
-
-        <div class="service">
-            <div class="icon">💸</div>
-            <h3>ارسال حواله</h3>
-            <p>به تمام ولایت و ولسوالی‌های افغانستان</p>
-        </div>
-
-        <div class="service">
-            <div class="icon">🎮</div>
-            <h3>PUBG UC</h3>
-            <p>ارسال UC پابجی موبایل</p>
-        </div>
-
-        <div class="service">
-            <div class="icon">💎</div>
-            <h3>الماس IMO</h3>
-            <p>ارسال الماس ایمو</p>
-        </div>
-
-        <div class="service">
-            <div class="icon">📱</div>
-            <h3>کریدت افغانستان</h3>
-            <p>ارسال کریدت به افغانستان</p>
-        </div>
-
-        <div class="service">
-            <div class="icon">🌐</div>
-            <h3>بسته اینترنت</h3>
-            <p>ارسال بسته‌های اینترنتی</p>
-        </div>
-
-        <div class="service">
-            <div class="icon">🎁</div>
-            <h3>گیفت پابجی</h3>
-            <p>ماشین و X-Suit</p>
-        </div>
-
-    </div>
-
-
-    <!-- BANK -->
-
-    <h2 class="section-title">
-        💳 شماره حساب برای واریز
-    </h2>
-
-
-    <div class="bank-card">
-
-        <div class="bank-title">
-            🏦 کارت اول
-        </div>
-
-        <div class="info">
-            <strong>شماره کارت</strong>
-            5892101637483682
-        </div>
-
-        <div class="info">
-            <strong>نام صاحب حساب</strong>
-            علی رضا خانی علی کردی
-        </div>
-
-        <div class="info">
-            <strong>شماره شبا</strong>
-            830150000001630301009306
-        </div>
-
-        <button class="copy-btn"
-                onclick="copyText('5892101637483682')">
-            📋 کپی شماره کارت
-        </button>
-
-    </div>
-
-
-    <div class="bank-card">
-
-        <div class="bank-title">
-            🏦 کارت دوم
-        </div>
-
-        <div class="info">
-            <strong>شماره کارت</strong>
-            6219861822217419
-        </div>
-
-        <div class="info">
-            <strong>شماره شبا</strong>
-            IR390560611828006270
-        </div>
-
-        <div class="info">
-            <strong>کد بانک</strong>
-            955501
-        </div>
-
-        <div class="info">
-            <strong>نام صاحب حساب</strong>
-            خلیلی باصری
-        </div>
-
-        <button class="copy-btn"
-                onclick="copyText('6219861822217419')">
-            📋 کپی شماره کارت
-        </button>
-
-    </div>
-
-
-    <!-- RECEIPT -->
-
-    <h2 class="section-title">
-        📤 ارسال فیش واریزی
-    </h2>
-
-    <div class="receipt">
-
-        <p>
-            بعد از واریز پول، تصویر فیش خود را انتخاب کنید.
-        </p>
-
-        <label class="upload">
-
-            <div class="upload-icon">📷</div>
-
-            <strong>
-                برای انتخاب فیش کلیک کنید
-            </strong>
-
-            <div>
-                تصویر فیش بانکی را انتخاب کنید
-            </div>
-
-            <input
-                type="file"
-                id="receiptInput"
-                accept="image/*"
-                onchange="showReceipt(event)"
-            >
-
+  <div id="adminModal" class="modal" hidden>
+    <div class="modal-box admin-box">
+      <button class="close" data-close>×</button>
+      <span class="eyebrow">ADMIN PANEL</span>
+      <h2>مدیریت خدمات</h2>
+      <p class="muted">این نسخه اطلاعات را در همین مرورگر ذخیره می‌کند. بعداً می‌توانیم پنل آنلاین و دیتابیس واقعی اضافه کنیم.</p>
+      <form id="serviceForm">
+        <input type="hidden" id="editId">
+        <label>نام خدمت<input id="serviceName" required placeholder="مثلاً UC پابجی"></label>
+        <label>دسته‌بندی<input id="serviceCategory" required placeholder="مثلاً بازی"></label>
+        <label>توضیحات<input id="serviceDesc" placeholder="توضیح کوتاه"></label>
+        <label>مقادیر / بسته‌ها <span class="hint">(هر خط: مقدار | قیمت)</span>
+          <textarea id="serviceVariants" rows="5" required placeholder="60 UC | 180000&#10;325 UC | 850000"></textarea>
         </label>
-
-        <div class="file-name"
-             id="fileName">
-        </div>
-
-        <img id="preview" alt="پیش‌نمایش فیش">
-
-        <button class="send-btn"
-                onclick="sendReceipt()">
-            📤 ارسال فیش
-        </button>
-
-        <div class="notice">
-            ⚠️ بعد از انتخاب فیش، ابتدا تصویر آن را بررسی کنید.
-            برای ارسال واقعی فیش به مدیریت، در مرحله بعد سیستم ارسال
-            آنلاین را به سایت وصل می‌کنیم.
-        </div>
-
+        <div class="admin-actions"><button class="btn primary" type="submit">ذخیره خدمت</button><button class="btn secondary" type="button" id="resetForm">پاک کردن فرم</button></div>
+      </form>
+      <div id="adminList" class="admin-list"></div>
     </div>
+  </div>
 
-
-    <!-- CONTACT INFO -->
-
-    <h2 class="section-title">
-        📞 راه‌های ارتباطی
-    </h2>
-
-    <div class="contact">
-
-        <a class="call" href="tel:09338486503">
-            09338486503
-        </a>
-
-        <a class="call" href="tel:09911976038">
-            09911976038
-        </a>
-
-    </div>
-
-</div>
-
-
-<footer>
-
-    <p>
-        <strong>Habibi</strong>
-    </p>
-
-    <p>
-        خدمات پولی و اینترنتی برادران حبیبی
-    </p>
-
-    <p>
-        © 2026 تمامی حقوق محفوظ است
-    </p>
-
-</footer>
-
-
-<script>
-
-/* COPY */
-
-function copyText(text){
-
-    navigator.clipboard.writeText(text)
-    .then(function(){
-
-        alert("شماره کارت کپی شد ✅");
-
-    })
-    .catch(function(){
-
-        alert("کپی انجام نشد؛ شماره را دستی کپی کنید.");
-
-    });
-
-}
-
-
-/* RECEIPT PREVIEW */
-
-function showReceipt(event){
-
-    const file = event.target.files[0];
-
-    if(!file){
-        return;
-    }
-
-    const preview =
-        document.getElementById("preview");
-
-    const fileName =
-        document.getElementById("fileName");
-
-    fileName.innerText =
-        "فایل انتخاب شده: " + file.name;
-
-    const reader =
-        new FileReader();
-
-    reader.onload = function(e){
-
-        preview.src = e.target.result;
-
-        preview.style.display = "block";
-
-    };
-
-    reader.readAsDataURL(file);
-
-}
-
-
-/* SEND RECEIPT */
-
-function sendReceipt(){
-
-    const input =
-        document.getElementById("receiptInput");
-
-    if(!input.files.length){
-
-        alert("لطفاً ابتدا تصویر فیش را انتخاب کنید.");
-
-        return;
-    }
-
-    alert(
-        "فیش انتخاب شد ✅\n\n" +
-        "در مرحله بعد سیستم ارسال فیش را به واتساپ/سرور وصل می‌کنیم."
-    );
-
-}
-
-</script>
-<script>
-if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("./sw.js");
-}
-</script>
+  <script src="app.js"></script>
 </body>
 </html>

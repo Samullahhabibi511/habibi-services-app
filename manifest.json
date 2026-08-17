@@ -1,13 +1,1 @@
-{
-  "name": "خدمات پولی و اینترنتی برادران Habibi",
-  "short_name": "Habibi",
-  "description": "خدمات پولی، حواله و اینترنتی برادران Habibi",
-  "start_url": "./",
-  "scope": "./",
-  "display": "standalone",
-  "background_color": "#071d35",
-  "theme_color": "#0d5c63",
-  "lang": "fa",
-  "dir": "rtl",
-  "icons": []
-}
+{"name":"Habibi Shop | حبیبی شاپ","short_name":"Habibi Shop","start_url":"./","display":"standalone","background_color":"#07111f","theme_color":"#07111f","lang":"fa","dir":"rtl","icons":[{"src":"./favicon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]}
